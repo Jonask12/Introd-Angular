@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Myfirst2Component } from './myfirst2.component';
+import { CicleComponent } from './cicle.component';
 
-describe('Myfirst2Component', () => {
-  let component: Myfirst2Component;
-  let fixture: ComponentFixture<Myfirst2Component>;
+describe('CicleComponent', () => {
+  let component: CicleComponent;
+  let fixture: ComponentFixture<CicleComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [Myfirst2Component]
+      declarations: [CicleComponent]
     });
-    fixture = TestBed.createComponent(Myfirst2Component);
+    fixture = TestBed.createComponent(CicleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

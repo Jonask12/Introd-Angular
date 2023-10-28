@@ -1,0 +1,101 @@
+<section>
+  <!-- <article>
+    <h3>Interpolatio / Interpolação</h3>
+    <p>String renderizada com interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 + getValue() }}</p>
+    <p>Curto o curso de Angular e gosto do curso: {{ courseAngular && getLikeCourse() }}</p>
+  </article>
+ -->
+
+ <!-- <section>
+  <article>
+    <h1>Class e binding</h1>
+  <div>
+    Selecione uma classe
+    <select #class (change)="0">
+      <option value="alert alert-success">Sucesso</option>
+      <option value="alert alert-info">Info</option>
+      <option value="alert alert-warning">Alerta</option>
+      <option value="alert alert-dange">Error</option>
+    </select>
+    <br><br>
+
+    <div class="alert {{ class.value }}" role="alert">
+      Texto colorido conforme vlaor do combox.
+    </div>
+    <div class="alert" role="alert"
+    [class.alert-success]="class.value === 'alert alert-success'">
+      Sucess
+    </div>
+    <div class="alert" role="alert"
+    [class.alert-info]="class.value === 'alert alert-info'">
+    Info
+  </div>
+    <div class="alert" role="alert">Alerta</div>
+    <div class="alert" role="alert">Error</div>
+  </div>
+  </article>
+ </section> -->
+
+ <!-- <article>
+
+
+
+
+  <h3>Event binding</h3>
+  <div>
+    <button (click)="buttonClicked()" class="btn btn-primary">
+      click me
+    </button>
+
+    <input type="text"
+    (keyup)="onKeyUp($event)"
+    (keyup.enter)="saveValue(fieldInput.value)"
+    (blur)="saveValue(fieldInput.value)"
+    #fieldInput
+    />
+    <p>Valor Atual: {{ currentValue }}</p>
+    <p>Valor salvo: {{ valueSaved }}</p>
+    <br>
+    <span
+    (mouseover)="onMouseOverOut()"
+    (mouseout)="onMouseOverOut()"
+    [class.highlight]="isMouseOver"
+    >
+      Tap to change of color
+    </span>
+  </div>
+ </article> -->
+
+
+</section>
+
+
+<!-- <section class="two-way-binding">
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      <input type="text"
+        [value]="name"
+        (input)="name = nameTyped.value"
+        #nameTyped
+      >
+
+      <p>Você digitou: {{ name }}</p>
+    </div>
+  </article>
+</section> -->
+
+
+<section>
+  <article>
+    <h3>Input/Output Properties</h3>
+    <app-course [name]="courseName"></app-course>
+  </article>
+  <count
+  [value]="19"
+  (changedValue)="onChangedValue($event)"
+  >
+</count>
+</section>

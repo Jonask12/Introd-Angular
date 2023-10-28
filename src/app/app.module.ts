@@ -3,18 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Myfirst2Component } from './myfirst2/myfirst2.component';
-import { CoursesModule } from './courses/courses.module';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { InputPropertiesComponent } from './input-properties/input-properties.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicleComponent } from './cicle/cicle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Myfirst2Component
+    DataBindingComponent,
+    InputPropertiesComponent,
+    OutputPropertyComponent,
+    CicleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoursesModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
